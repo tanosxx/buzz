@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-07 20:20+0200\n"
+"POT-Creation-Date: 2026-03-28 21:04+0200\n"
 "PO-Revision-Date: 2023-05-01 15:45+0800\n"
 "Last-Translator: \n"
 "Language-Team: Lamb\n"
@@ -175,6 +175,7 @@ msgid "Export folder"
 msgstr "匯出資料夾"
 
 #: buzz/widgets/preferences_dialog/general_preferences_widget.py
+#: buzz/widgets/transcriber/advanced_settings_dialog.py
 msgid "Live recording mode"
 msgstr "即時錄製模式"
 
@@ -445,10 +446,6 @@ msgid "Silence threshold:"
 msgstr "靜音閾值："
 
 #: buzz/widgets/transcriber/advanced_settings_dialog.py
-msgid "Live recording mode:"
-msgstr "即時錄製模式："
-
-#: buzz/widgets/transcriber/advanced_settings_dialog.py
 msgid "Line separator:"
 msgstr "行分隔符號："
 
@@ -635,6 +632,48 @@ msgstr "無法重新開始轉錄：模型不可用且無法下載。"
 msgid "Could not restart transcription: transcriber worker not found."
 msgstr "無法重新開始轉錄：找不到轉錄工作器。"
 
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Nvidia GPU Acceleration"
+msgstr "Nvidia GPU 加速"
+
+#: buzz/widgets/cuda_installer_widget.py
+#, fuzzy
+msgid "Install Nvidia GPU Acceleration?"
+msgstr "僅使用 CPU 並停用 GPU 加速"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid ""
+"Installing GPU acceleration for Nvidia GPUS allows Buzz to transcribe audio "
+"significantly faster using CUDA. For other GPU brands this acceleration will "
+"have no effect\n"
+"\n"
+"This will download and install PyTorch with CUDA support (~2 GB). Buzz must "
+"be restarted after installation."
+msgstr ""
+"為 Nvidia GPU 安裝 GPU 加速後，Buzz 可以使用 CUDA 大幅提升音訊轉錄速度。對於其他品牌的 GPU，此加速將不起作用。\n"
+"\n"
+"這將下載並安裝支援 CUDA 的 PyTorch（約 2 GB）。安裝完成後必須重新啟動 Buzz。"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Install GPU Support"
+msgstr "安裝 GPU 支援"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Not Now"
+msgstr "暫不安裝"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Installation complete! Restart Buzz to enable GPU acceleration."
+msgstr "安裝完成！請重新啟動 Buzz 以啟用 GPU 加速。"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Close"
+msgstr ""
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Installation failed: {}"
+msgstr "安裝失敗：{}"
+
 #: buzz/widgets/recording_transcriber_widget.py
 msgid "Live Recording"
 msgstr "現場錄製"
@@ -784,6 +823,10 @@ msgstr "檢查更新"
 #: buzz/widgets/about_dialog.py
 msgid "Show logs"
 msgstr "顯示日誌"
+
+#: buzz/widgets/about_dialog.py
+msgid "Install CUDA Acceleration"
+msgstr "安裝 CUDA 加速"
 
 #: buzz/widgets/about_dialog.py
 msgid "You're up to date!"
@@ -1609,6 +1652,9 @@ msgid ""
 "Speech extraction failed! Check your internet connection — a model may need "
 "to be downloaded."
 msgstr "語音提取失敗！請檢查您的網路連線——可能需要下載模型。"
+
+#~ msgid "Live recording mode:"
+#~ msgstr "即時錄製模式："
 
 #~ msgid "Comma-separated, e.g. \"0.0, 0.2, 0.4, 0.6, 0.8, 1.0\""
 #~ msgstr "逗號分隔，例如\"0.0, 0.2, 0.4, 0.6, 0.8, 1.0\""

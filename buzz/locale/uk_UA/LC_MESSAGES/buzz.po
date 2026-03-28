@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-07 20:20+0200\n"
+"POT-Creation-Date: 2026-03-28 21:04+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Yevhen Popok <xalt7x.service@gmail.com>\n"
 "Language-Team: \n"
@@ -172,6 +172,7 @@ msgid "Export folder"
 msgstr "Тека для експорту"
 
 #: buzz/widgets/preferences_dialog/general_preferences_widget.py
+#: buzz/widgets/transcriber/advanced_settings_dialog.py
 msgid "Live recording mode"
 msgstr "Режим живого запису"
 
@@ -449,10 +450,6 @@ msgid "Silence threshold:"
 msgstr "Поріг тиші:"
 
 #: buzz/widgets/transcriber/advanced_settings_dialog.py
-msgid "Live recording mode:"
-msgstr "Режим живого запису:"
-
-#: buzz/widgets/transcriber/advanced_settings_dialog.py
 msgid "Line separator:"
 msgstr "Роздільник рядків:"
 
@@ -642,6 +639,48 @@ msgid "Could not restart transcription: transcriber worker not found."
 msgstr ""
 "Не вдалося перезапустити транскрипцію: обробник транскрипції не знайдено."
 
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Nvidia GPU Acceleration"
+msgstr "Апаратне прискорення Nvidia GPU"
+
+#: buzz/widgets/cuda_installer_widget.py
+#, fuzzy
+msgid "Install Nvidia GPU Acceleration?"
+msgstr "Використовувати лише CPU та вимкнути прискорення GPU"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid ""
+"Installing GPU acceleration for Nvidia GPUS allows Buzz to transcribe audio "
+"significantly faster using CUDA. For other GPU brands this acceleration will "
+"have no effect\n"
+"\n"
+"This will download and install PyTorch with CUDA support (~2 GB). Buzz must "
+"be restarted after installation."
+msgstr ""
+"Встановлення апаратного прискорення GPU для відеокарт Nvidia дозволяє Buzz значно швидше транскрибувати аудіо за допомогою CUDA. Для відеокарт інших виробників це прискорення не матиме жодного ефекту.\n"
+"\n"
+"Це завантажить і встановить PyTorch з підтримкою CUDA (~2 ГБ). Після встановлення необхідно перезапустити Buzz."
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Install GPU Support"
+msgstr "Встановити підтримку GPU"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Not Now"
+msgstr "Не зараз"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Installation complete! Restart Buzz to enable GPU acceleration."
+msgstr "Встановлення завершено! Перезапустіть Buzz, щоб увімкнути апаратне прискорення GPU."
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Close"
+msgstr "Закрити"
+
+#: buzz/widgets/cuda_installer_widget.py
+msgid "Installation failed: {}"
+msgstr "Помилка встановлення: {}"
+
 #: buzz/widgets/recording_transcriber_widget.py
 msgid "Live Recording"
 msgstr "Живий запис"
@@ -793,6 +832,10 @@ msgstr "Перевірити оновлення"
 #: buzz/widgets/about_dialog.py
 msgid "Show logs"
 msgstr "Показати журнали"
+
+#: buzz/widgets/about_dialog.py
+msgid "Install CUDA Acceleration"
+msgstr "Встановити прискорення CUDA"
 
 #: buzz/widgets/about_dialog.py
 msgid "You're up to date!"
@@ -1633,6 +1676,9 @@ msgstr ""
 "Не вдалося витягти мовлення! Перевірте підключення до інтернету — можливо, "
 "потрібно завантажити модель."
 
+#~ msgid "Live recording mode:"
+#~ msgstr "Режим живого запису:"
+
 #~ msgid "Comma-separated, e.g. \"0.0, 0.2, 0.4, 0.6, 0.8, 1.0\""
 #~ msgstr "Значення розділені комами, напр., \"0.0, 0.2, 0.4, 0.6, 0.8, 1.0\""
 
@@ -1661,9 +1707,6 @@ msgstr ""
 #~ "To enable necessary permissions run the following commands in the terminal"
 #~ msgstr ""
 #~ "Для активації необхідних дозволів, запустіть наступну команду в терміналі"
-
-#~ msgid "Close"
-#~ msgstr "Закрити"
 
 #~ msgid "Enter instructions for AI on how to translate..."
 #~ msgstr "Введіть інструкції для перекладу ШІ..."
